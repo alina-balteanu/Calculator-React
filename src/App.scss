@@ -1,26 +1,23 @@
 $bg-color: #282c34;
-$light-color: #daf6ff;
-$shadow-light: 0 0 20px #0aafe6, 0 0 20px #0aafe6;
-$icon-light: 2px 2px 40px #0aafe6, -2px -2px 40px #0aafe6,
-  -2px 2px 40px hsl(195, 92%, 47%), 2px -2px 40px #0aafe6,
-  0 0 20px rgba(10, 175, 230, 0);
-$bg-light: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
-$inset-light: 2px 2px 40px #0aafe6 inset, -2px -2px 40px #0aafe6 inset,
-  -2px 2px 40px #0aafe6 inset, 2px -2px 40px #0aafe6 inset,
-  0 0 20px #0aafe6 inset;
-$pad-color: radial-gradient(#3a3a3a, black);
-$color-lightest-gray: #f0f0f0;
-$color-light-gray: #cecece;
-$color-medium-gray: #adadad;
-$color-dark-gray: #414141;
-$color-white: #fff;
-$color-black: #000;
 $color-dark-purple: #1f2029;
-$belt-highlight: #050404;
-
 $display-color: #b4cca6;
 $inner-shadow: inset 0 -2px 4px #cecece, inset 0 1px 15px #000;
 $top-left-gr-black: linear-gradient(162deg, #3c3c3c 10%, #000 68%, #000 100%);
+
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
 
 @mixin inners($color) {
   box-shadow: inset -1px -2px 4px darken($color, 15),
@@ -112,8 +109,9 @@ body {
     margin: 0.7rem 0;
     text-align: right;
     box-shadow: $inner-shadow;
-    font-family: "Orbitron", sans-serif;
-    font-size: 1.2rem;
+    // font-family: "Orbitron", sans-serif;
+    font-family: "Digital";
+    font-size: 1.5rem;
     overflow: hidden;
     font-weight: bold;
     height: 66.8px;
@@ -121,7 +119,7 @@ body {
       opacity: 0.8;
     }
     .formula {
-      font-size: 0.9rem;
+      font-size: 1rem;
       opacity: 0.5;
       height: 26.4px;
     }
